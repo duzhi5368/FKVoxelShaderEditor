@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/Font/DefaultFont.spritefont</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/8x8x8.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/chr_knight.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/castle.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/chr_old.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/chr_rain.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/chr_sword.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/menger.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/monu1.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/monu9.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/monu10.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/nature.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/shelf.vox</File>
+    <File>D:/BackUp/FKVoxelGame/FKVoxelGame/FKVoxelEditor/Content/VoxModel/teapot.vox</File>
+  </SourceFiles>
+</SourceFileCollection>

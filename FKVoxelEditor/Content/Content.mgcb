@@ -1,0 +1,111 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:Windows
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:..\..\bin\Debug\MagicaVoxLoader.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin Font\DefaultFont.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:TextureFormat=Compressed
+/build:Font\DefaultFont.spritefont
+
+#begin VoxModel\8x8x8.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\8x8x8.vox
+
+#begin VoxModel\chr_knight.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\chr_knight.vox
+
+#begin VoxModel\castle.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\castle.vox
+
+#begin VoxModel\chr_old.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\chr_old.vox
+
+#begin VoxModel\chr_rain.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\chr_rain.vox
+
+#begin VoxModel\chr_sword.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\chr_sword.vox
+
+#begin VoxModel\menger.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\menger.vox
+
+#begin VoxModel\monu1.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\monu1.vox
+
+#begin VoxModel\monu9.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\monu9.vox
+
+#begin VoxModel\monu10.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\monu10.vox
+
+#begin VoxModel\nature.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\nature.vox
+
+#begin VoxModel\shelf.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\shelf.vox
+
+#begin VoxModel\teapot.vox
+/importer:VoxImporter
+/processor:ChunkProcessor
+/processorParam:RendererType=Instanced
+/build:VoxModel\teapot.vox
+
+#begin Texture\DefaultTexture.jpg
+/copy:Texture\DefaultTexture.jpg
+
+#begin Config\HLSLKeywords.map
+/copy:Config\HLSLKeywords.map
+
+#begin Config\HLSLHelp.html
+/copy:Config\HLSLHelp.html
+
+#begin ShaderSrc\DefaultSimpleColorShader.fx
+/copy:ShaderSrc\DefaultSimpleColorShader.fx

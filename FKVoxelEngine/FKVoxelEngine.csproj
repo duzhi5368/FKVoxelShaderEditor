@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44A201BB-A54C-4D17-8FD3-07CC6C5D780B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FKVoxelEngine</RootNamespace>
+    <AssemblyName>FKVoxelEngine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework, Version=3.6.0.1625, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Depend\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Camera\Camera.cs" />
+    <Compile Include="Camera\OrbitCamera.cs" />
+    <Compile Include="DataStruct\ChunkList.cs" />
+    <Compile Include="Effect\EffectHelper.cs" />
+    <Compile Include="Reader\ChunkListReader.cs" />
+    <Compile Include="Reader\ChunkReader.cs" />
+    <Compile Include="RenderObj\BlockData.cs" />
+    <Compile Include="RenderObj\BlockGrid.cs" />
+    <Compile Include="RenderObj\BlockIntersection.cs" />
+    <Compile Include="RenderObj\CubeBuilder.cs" />
+    <Compile Include="RenderObj\GeometricPrimitive\BezierPrimitive.cs" />
+    <Compile Include="RenderObj\GeometricPrimitive\CubePrimitive.cs" />
+    <Compile Include="RenderObj\GeometricPrimitive\GeometricPrimitive.cs" />
+    <Compile Include="RenderObj\GeometricPrimitive\SpherePrimitive.cs" />
+    <Compile Include="RenderObj\GeometricPrimitive\TeapotPrimitive.cs" />
+    <Compile Include="RenderObj\GeometricPrimitive\TorusPrimitive.cs" />
+    <Compile Include="RenderObj\GreedyMesh.cs" />
+    <Compile Include="RenderObj\PolygonChunkRenderer.cs" />
+    <Compile Include="RenderObj\VoxelFace.cs" />
+    <Compile Include="Render\DirectionalShadowMap.cs" />
+    <Compile Include="Shader\ShaderTokenType.cs" />
+    <Compile Include="Utils\ArrayCopy.cs" />
+    <Compile Include="Utils\BoundingBoxExtensions.cs" />
+    <Compile Include="Utils\EnumMap.cs" />
+    <Compile Include="Utils\LightViewExtensions.cs" />
+    <Compile Include="Utils\PackingExtensions.cs" />
+    <Compile Include="Voxel\BlockContainer.cs" />
+    <Compile Include="Voxel\VoxelEffect.cs" />
+    <Compile Include="RenderObj\Chunk.cs" />
+    <Compile Include="RenderObj\ChunkRenderer.cs" />
+    <Compile Include="Render\CameraState.cs" />
+    <Compile Include="Render\GraphicsDeviceState.cs" />
+    <Compile Include="Render\GraphicsDeviceStateStack.cs" />
+    <Compile Include="Render\RenderState.cs" />
+    <Compile Include="VertexTypes\VertexWithIndex.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VertexTypes\VertexWithIndexNormal.cs" />
+    <Compile Include="VertexTypes\VertexWithNormal.cs" />
+    <Compile Include="VertexTypes\VertexWithNormalColor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Shaders\DefaultVoxelShader.dx11.mgfxo" />
+    <EmbeddedResource Include="Assets\Shaders\DefaultVoxelShader.ogl.mgfxo" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
